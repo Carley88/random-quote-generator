@@ -16,10 +16,10 @@ const quotes = [
   {quote: "The future belongs to those who believe in the beauty of their dreams", source: "Eleanor Roosevelt"},
   {quote: "It is during our darkest moments that we must focus to see the light.", source: "Aristotle"},
   {quote: "Do not go where the path may lead, go instead where there is no path and leave a trail.", source: "Ralph Waldo Emerson"},
-  {quote: "Mama always said life was like a box of chocolates: You never know what you’re gonna get.", source: "Forrest Gump"},
-  {quote: "To infinity—and beyond!", source: "Buzz Lightyear"},
-  {quote: "We’re all pretty bizarre. Some of us are just better at hiding it, that’s all.", source: "Andrew"},
-  {quote: "Just keep swimming", source: "Dory"}
+  {quote: "Mama always said life was like a box of chocolates: You never know what you’re gonna get.", source: "Forrest Gump (Tom Hanks)", year: 1994},
+  {quote: "To infinity—and beyond!", source: "Buzz Lightyear (Tim Allen)", citation: "Toy Story", year: 1996},
+  {quote: "We’re all pretty bizarre. Some of us are just better at hiding it, that’s all.", source: "Andrew Clark (Emillio Estevez)", citation: "The Breakfast Club"},
+  {quote: "Just keep swimming", source: "Dory (Ellen Degeneres)", citation: "Finding Nemo"}
 ];
 
 
