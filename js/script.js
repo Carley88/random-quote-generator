@@ -35,6 +35,11 @@ function getRandomQuote() {
 /***
  * `printQuote` function
 ***/
+function printQuote() {
+  const quote = getRandomQuote();
+  const html = `<p class="quote"> ${quote.quote} </p> <p class="source"> ${quote.source} </p>`;
+  return document.getElementById('quote-box').innerHTML = html;
+}
 
 
 
