@@ -26,8 +26,11 @@ const quotes = [
 /***
  * `getRandomQuote` function
 ***/
-
-
+function getRandomQuote() {
+  const quotesIndexNumbers = quotes.length - 1;
+  const randomNumber = Math.floor(Math.random() * quotesIndexNumbers);
+  return quotes[randomNumber]
+}
 
 /***
  * `printQuote` function
