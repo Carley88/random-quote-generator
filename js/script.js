@@ -19,7 +19,11 @@ const quotes = [
   {quote: "Mama always said life was like a box of chocolates: You never know what you’re gonna get.", source: "Forrest Gump (Tom Hanks)", year: 1994},
   {quote: "To infinity—and beyond!", source: "Buzz Lightyear (Tim Allen)", citation: "Toy Story", year: 1996},
   {quote: "We’re all pretty bizarre. Some of us are just better at hiding it, that’s all.", source: "Andrew Clark (Emillio Estevez)", citation: "The Breakfast Club"},
-  {quote: "Just keep swimming", source: "Dory (Ellen Degeneres)", citation: "Finding Nemo"}
+  {quote: "Just keep swimming", source: "Dory (Ellen Degeneres)", citation: "Finding Nemo"},
+  {quote: "There's no place like home.", source: "Dorothy (Judy Garland)", citation: "Wizard of Oz", year: 1939},
+  {quote: "I'm king of the world!", source: "Jack Dawson (Leonardo DiCaprio)", citation: "Titanic"},
+  {quote: "I feel the need - the need for speed!", source: "Maverick (Tom Cruise)", citation: "Top Gun", year: 1986},
+  {quote: "Adventure is out there.", source: "Charles Muntz (Christopher Plummer)", citation: "Up!"}
 ];
 
 
