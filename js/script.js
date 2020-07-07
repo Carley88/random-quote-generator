@@ -30,11 +30,11 @@ const quotes = [
  * `getRandomQuote` function
  * Picks one quote at random from the quotes array.
  * The function uses Math.random to produce a random number between the quotes array index.
- * To find how many objects are in the quotes array I use the length property & then minus 1 from the result. This is to account for the index starting at 0.
+ * To find how many objects are in the quotes array I use the length property.
  * @returns {object} - One quote from the quotes array.
 ***/
 function getRandomQuote() {
-  const quotesIndexNumbers = quotes.length - 1;
+  const quotesIndexNumbers = quotes.length;
   const randomNumber = Math.floor(Math.random() * quotesIndexNumbers);
   return quotes[randomNumber];
 }
