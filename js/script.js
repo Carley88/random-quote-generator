@@ -3,12 +3,11 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-// For assistance:
-  // Check the "Project Resources" section of the project instructions
-  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
-
 /***
  * `quotes` array
+ * The array holds several objects which store information on quotes.
+ * Each object holds a quote and the source of the quote.
+ * Some of the objects hold further information such as citaion and/or the year the quote originated from.
 ***/
 const quotes = [
   {quote: "Spread love everywhere you go. Let no one ever come to you without leaving happier.", source: "Mother Teresa"},
@@ -25,6 +24,10 @@ const quotes = [
 
 /***
  * `getRandomQuote` function
+ * Picks one quote at random from the quotes array.
+ * The function uses Math.random to produce a random number between the quotes array index.
+ * To find how many objects are in the quotes array I use the length property & then minus 1 from the result. This is to account for the index starting at 0.
+ * @returns {object} - One quote from the quotes array.
 ***/
 function getRandomQuote() {
   const quotesIndexNumbers = quotes.length - 1;
@@ -34,6 +37,11 @@ function getRandomQuote() {
 
 /***
  * `printQuote` function
+ * The function gets a random quote & then runs a series of if statements to identify what information the object holds.
+ * The function firstly calls the getRandomQuote function.
+ * A variable then stores the basic html which will feature in all instances of the if statements.
+ * A series of if statements are then run to determin what additional information needs to be inserted into the html string.
+ * @returns the document.getElementById method to add my HTML.
 ***/
 function printQuote() {
   const quote = getRandomQuote();
