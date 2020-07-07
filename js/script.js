@@ -37,7 +37,17 @@ function getRandomQuote() {
 ***/
 function printQuote() {
   const quote = getRandomQuote();
-  const html = `<p class="quote"> ${quote.quote} </p> <p class="source"> ${quote.source} </p>`;
+  const basicHTMLString = `<p class="quote"> ${quote.quote} </p> <p class="source"> ${quote.source}`;
+  let html = ''
+  if (quote.citation && quote.year) {
+    html = `${basicHTMLString} <span class="citation">${quote.citation}</span><span class="year">${quote.year}</span></p>`;
+  } else if (quote.year) {
+      html = `${basicHTMLString} <span class="year">${quote.year}</span> </p>`;
+  } else if (quote.citation) {
+      html = `${basicHTMLString} <span class="citation">${quote.citation}</span> </p>`;
+  } else {
+    html = `${basicHTMLString}</p>`;
+  }
   return document.getElementById('quote-box').innerHTML = html;
 }
 
