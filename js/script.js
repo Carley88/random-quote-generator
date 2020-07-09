@@ -40,6 +40,27 @@ function getRandomQuote() {
 }
 
 /***
+*`randomRGBNumber` function
+*Creates a random number between the numbers of the RGB spectrum.
+*@returns {number} - A random number between 0 and 256.
+***/
+function randomRGBNumber() {
+  return Math.floor(Math.random() * 256);
+}
+
+/***
+*`randomColour` function
+*Creates a random RGB number to produce a random colour.
+*Calls the randomRGBNumber three times to produce a random number for Red, Blue & Green.
+*@returns {string} - "rgb<randomRGBNumber>,<randomRGBNumber><randomRGBNumber>"
+***/
+function randomColour() {
+  const randomNumber = Math.floor(Math.random() * 256);
+  const randomColour = `rgb(${randomRGBNumber()}, ${randomRGBNumber()}, ${randomRGBNumber()})`;
+  return randomColour;
+}
+
+/***
  * `printQuote` function
  * The function gets a random quote & then runs a series of if statements to identify what information the object holds.
  * The function firstly calls the getRandomQuote function.
