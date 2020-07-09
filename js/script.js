@@ -10,19 +10,71 @@ project 1 - A Random Quote Generator
  * Some of the objects hold further information such as citaion and/or the year the quote originated from.
 ***/
 const quotes = [
-  {quote: "Spread love everywhere you go. Let no one ever come to you without leaving happier.", source: "Mother Teresa"},
-  {quote: "Always remember that you are absolutely unique. Just like everyone else.", source: "Margaret Mead"},
-  {quote: "The future belongs to those who believe in the beauty of their dreams", source: "Eleanor Roosevelt"},
-  {quote: "It is during our darkest moments that we must focus to see the light.", source: "Aristotle"},
-  {quote: "Do not go where the path may lead, go instead where there is no path and leave a trail.", source: "Ralph Waldo Emerson"},
-  {quote: "Mama always said life was like a box of chocolates: You never know what you’re gonna get.", source: "Forrest Gump", actor: "Tom Hanks", year: 1994},
-  {quote: "To infinity—and beyond!", source: "Buzz Lightyear", actor: "Tim Allen", citation: "Toy Story", year: 1996},
-  {quote: "We’re all pretty bizarre. Some of us are just better at hiding it, that’s all.", source: "Andrew Clark", actor: "Emillio Estevez", citation: "The Breakfast Club"},
-  {quote: "Just keep swimming", source: "Dory", actor: "Ellen Degeneres", citation: "Finding Nemo"},
-  {quote: "There's no place like home.", source: "Dorothy", actor: "Judy Garland", citation: "Wizard of Oz", year: 1939},
-  {quote: "I'm king of the world!", source: "Jack Dawson", actor: "Leonardo DiCaprio", citation: "Titanic"},
-  {quote: "I feel the need - the need for speed!", source: "Maverick", actor: "Tom Cruise", citation: "Top Gun", year: 1986},
-  {quote: "Adventure is out there.", source: "Charles Muntz", actor: "Christopher Plummer", citation: "Up!"}
+  {
+    quote: "Spread love everywhere you go. Let no one ever come to you without leaving happier.",
+    source: "Mother Teresa"
+  },
+  {
+    quote: "Always remember that you are absolutely unique. Just like everyone else.",
+    source: "Margaret Mead"
+  },
+  {
+    quote: "The future belongs to those who believe in the beauty of their dreams",
+    source: "Eleanor Roosevelt"
+  },
+  {
+    quote: "It is during our darkest moments that we must focus to see the light.",
+    source: "Aristotle"
+  },
+  {
+    quote: "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+    source: "Ralph Waldo Emerson"
+  },
+  {
+    quote: "Mama always said life was like a box of chocolates: You never know what you’re gonna get.",
+    source: "Forrest Gump", actor: "Tom Hanks", year: 1994
+  },
+  {
+    quote: "To infinity—and beyond!",
+    source: "Buzz Lightyear", actor: "Tim Allen",
+    citation: "Toy Story",
+    year: 1996
+  },
+  {
+    quote: "We’re all pretty bizarre. Some of us are just better at hiding it, that’s all.",
+    source: "Andrew Clark", actor: "Emillio Estevez",
+    citation: "The Breakfast Club"
+  },
+  {
+    quote: "Just keep swimming",
+    source: "Dory", actor: "Ellen Degeneres",
+    citation: "Finding Nemo"
+  },
+  {
+    quote: "There's no place like home.",
+    source: "Dorothy", actor: "Judy Garland",
+    citation: "Wizard of Oz",
+    year: 1939
+  },
+  {
+    quote: "I'm king of the world!",
+    source: "Jack Dawson",
+    actor: "Leonardo DiCaprio",
+    citation: "Titanic"
+  },
+  {
+    quote: "I feel the need - the need for speed!",
+    source: "Maverick",
+    actor: "Tom Cruise",
+    citation: "Top Gun",
+    year: 1986
+  },
+  {
+    quote: "Adventure is out there.",
+    source: "Charles Muntz",
+    actor: "Christopher Plummer",
+    citation: "Up!"
+  }
 ];
 
 
