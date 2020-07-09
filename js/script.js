@@ -75,13 +75,13 @@ function printQuote() {
   const basicHTMLString = `<p class="quote"> ${quote.quote} </p> <p class="source"> ${quote.source}`;
   let html = ''
   if (quote.citation && quote.year) {
-    html = `${basicHTMLString} <span class="citation">${quote.citation}</span><span class="year">${quote.year}</span></p>`;
+    html = `${basicHTMLString} (${quote.actor})<span class="citation">${quote.citation}</span><span class="year">${quote.year}</span></p>`;
     randomBackgroundColour
   } else if (quote.year) {
-      html = `${basicHTMLString} <span class="year">${quote.year}</span> </p>`;
+      html = `${basicHTMLString} (${quote.actor}) <span class="year">${quote.year}</span> </p>`;
       randomBackgroundColour
   } else if (quote.citation) {
-      html = `${basicHTMLString} <span class="citation">${quote.citation}</span> </p>`;
+      html = `${basicHTMLString} (${quote.actor}) <span class="citation">${quote.citation}</span> </p>`;
       randomBackgroundColour
   } else {
     html = `${basicHTMLString}</p>`;
