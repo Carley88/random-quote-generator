@@ -66,20 +66,26 @@ function randomColour() {
  * The function firstly calls the getRandomQuote function.
  * A variable then stores the basic html which will feature in all instances of the if statements.
  * A series of if statements are then run to determin what additional information needs to be inserted into the html string.
+ * The function also changes the background to a random colour everytime it is called.
  * @returns the document.getElementById method to add my HTML.
 ***/
 function printQuote() {
   const quote = getRandomQuote();
+  const randomBackgroundColour = document.body.style.backgroundColor = randomColour();
   const basicHTMLString = `<p class="quote"> ${quote.quote} </p> <p class="source"> ${quote.source}`;
   let html = ''
   if (quote.citation && quote.year) {
     html = `${basicHTMLString} <span class="citation">${quote.citation}</span><span class="year">${quote.year}</span></p>`;
+    randomBackgroundColour
   } else if (quote.year) {
       html = `${basicHTMLString} <span class="year">${quote.year}</span> </p>`;
+      randomBackgroundColour
   } else if (quote.citation) {
       html = `${basicHTMLString} <span class="citation">${quote.citation}</span> </p>`;
+      randomBackgroundColour
   } else {
     html = `${basicHTMLString}</p>`;
+    randomBackgroundColour
   }
   return document.getElementById('quote-box').innerHTML = html;
 }
